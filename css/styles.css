@@ -1,0 +1,26 @@
+main{
+    display: flex;
+}
+
+header, h2, .month{
+    text-align: center;
+}
+
+.month{
+    text-decoration: underline;
+}
+
+.hide-month{
+    display: none;
+}
+
+.calendar-grid{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.grid-cell{
+    border: 1px solid black;
+    padding: 20px;
+}
