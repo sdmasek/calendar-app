@@ -1,9 +1,34 @@
+
+body{
+    font-family: 'PT Serif', serif;
+}
+
 main{
     display: flex;
 }
 
-header, h2, .month{
+header, h2, .month, .day{
     text-align: center;
+}
+
+.arrow-left, .arrow-right, .grid-cell{
+    font-weight: bold;
+
+}
+
+#days-of-week{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.45em;
+    
+}
+
+.day{
+    padding: 0 1.2em 0 1.2em;
+    color: white;
+    background-color: rgb(22, 20, 20);
+    
 }
 
 .month{
@@ -17,10 +42,22 @@ header, h2, .month{
 .calendar-grid{
     display: flex;
     flex-wrap: wrap;
-    
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+
+}
+
+.grid-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .grid-cell{
     border: 1px solid black;
-    padding: 20px;
+    padding: 0 20px 20px 20px;
+    width: 100px;
+    height: 100px;
 }
+
