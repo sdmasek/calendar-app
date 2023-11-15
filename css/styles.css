@@ -7,6 +7,12 @@ main{
     display: flex;
 }
 
+.change-month{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 header, h2, .month, .day{
     text-align: center;
 }
@@ -15,6 +21,16 @@ header, h2, .month, .day{
     font-weight: bold;
 
 }
+
+.arrow-left, .arrow-right{
+    padding: .75em;
+    font-size: 1.5em
+}
+
+.arrow-left, .arrow-right:hover{
+    cursor: pointer;
+}
+
 
 #days-of-week{
     display: flex;
@@ -60,4 +76,11 @@ header, h2, .month, .day{
     width: 100px;
     height: 100px;
 }
+
+/* responsive rules */
+
+@media only screen and (max-width: 760px) {
+    
+}
+
 
